@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>ФОРМА</title>
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section { display: block; }
+  </style>
+  <title>Форма</title>
+ </head>
+ <body>
+   <h1>Прошу вас заполнить форму!</h1>
+   <a href="/">Главная</a>
+    <form action="/"
+      method="POST">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name"
+          type="text"
+          placeholder="Фамилия, Имя, Отчество" />
+      </label><br />
+
+      <label>
+        Ваш email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          placeholder="2019-08-13"
+          type="date" />
+      </label><br />
+      
+      Пол:<br />
+      <label><input type="radio"
+        name="radio-group-male" value="male" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-female" value="female" />
+        Женский </label><br />
+
+        <label>
+            Выберите любимый язык программирования:
+            <br />
+            <select name="field-multiple-language"
+              multiple="multiple">
+              <option value="Значение1">C</option>
+              <option value="Значение2">C++</option>
+              <option value="Значение3">JavaScript</option>
+              <option value="Значение4"> PHP</option>
+              <option value="Значение5">Python </option>
+              <option value="Значение6"> Java</option>
+              <option value="Значение7">Haskel </option>
+              <option value="Значение8">Clojure</option>
+              <option value="Значение9">Prolog </option>
+              <option value="Значение10">Scala</option>
+            </select>
+          </label><br />
+      <label>
+
+        Расскажите о себе!<br />
+        <textarea name="field-biography">Меня зовут Кира Йошикаге...</textarea>
+      </label><br />
+
+
+      <label><input type="checkbox" name="check-contract" />
+        С контрактом ознакомлен(а)</label><br />
+
+      <input type="submit" value="Отправить" />
+    </form>
+
+
+    
+ </body>
+</html>
+
+
+
