@@ -2,6 +2,7 @@
 <html>
  <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
   <title>Главная</title>
   <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,74 +13,219 @@
   </style>
   <title>Главная страница</title>
  </head>
- <body>
-  <h1>Очень крутая главная страница</h1>
-  <h2> Вашему вниманию - маркированный список!</h2>
-  <ul> 
-    <li><p><a href="https://kubsu.ru/">КубГУ</a></p>  </li>
-    <li> <p><a href="http://kubsu.ru/">КубГУ,</a>  но протокол другой</p></li>
-    <li><a href="https://hidin.itch.io/"><img src="./images/fXgxao.png" alt="Игра" style="width: 300px;"></a> </li>
-    <li> <p><a href="/pagetwo.html">Страница номер два,</a>  ссылка на внутреннюю сокращенная</p></li>
-    <li><a href="/index.html">Сокращенная ссылка на главную страницу</a></li>
-    <li> <a href="#down">Вниз страницы (ссылка на фрагмент текущей)</a> </li>
-    <li><p><a href="https://www.youtube.com/watch?v=KKVEvc7UoM0&ab_channel=hidin&start=25">Ссылка</a> с тремя параметрами url</p></li>
-    <li> <a href="https://moodle.kubsu.ru/enrol/index.php?id=801">Ссылка с параметром id в URL</a></li>
-    <li><a href="./pagetwo.html">Относительная в текущем каталоге</a></li>
-    <li><a href="./about/about.html">Относительная на страницу в каталоге about </a></li>
-    <li><a href="./about/about.html">11) относительную на страницу в каталоге уровнем выше текущего; Решение в about.html </a></li>
-    <li> <p><a href="./catalogue1/catalogue2/nestedpage.html">Страница </a> глубоко по каталогу/ Там решение 12) относительную на страницу в каталоге двумя уровнями выше; </p></li>
-    <li><p> Скачивайте мои игры по контекстной ссылке<a href="https://hidin.itch.io/masked-devourer">Вот здесь</a></li>
-    <li> <a href="https://hidin.itch.io/masked-devourer#:~:text=More%20information-,Download,-Download"> Фрагмент стороннего сайта! </a> </li>
-    <li>
-      <img src="images/ghHt23.png" alt="Игры" usemap="#gamesMap" width="832" height="421">
-    
-      <map name="gamesMap">
-        <area shape="rect" coords="0,0,400,421" href="https://hidin.itch.io/masked-devourer" alt="masked-devourer">
-        <area shape="circle" coords="600,210,100" href="https://hidin.itch.io/n" alt="noh">
-      </map>
-    </li>
-    <li><a href="">СУПЕР ПУСТАЯ ССЫЛКА</a></li>
-    <li><a>ссылка без href</a></li>
-    <li><a href="https://kubsu.ru/" rel="nofollow">
-      Ссылка nofollow поисковикам</a></li>
-      <li><a href="https://kubsu.ru/" rel="noindex">
-        Ссылка noindex поисковикам</a></li>
 
-    <li><ol>
-      <li> <a href="https://hidin.itch.io/masked-devourer" title="Новая игра"> MASKED DEVOURER</a></li>
-      <li> <a href="https://hidin.itch.io/n" title="Старая игра"> Noh</a></li>
-    </ol> </li>
-    <li><a href="ftp://demo:password@test.rebex.net/readme.txt">FTP server</a></li>
-    <li><a href="./form.html">ФОРМА</a></li>
+ <body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="logo"><a href=""><img src="images/2FXGqM.png" alt="Logo" style="width: 40px; height: 40px;"> </a> 
+        <span class="logo-text">Name of the site</span>
+      </div>
+      <ul class="nav">
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/pagetwo.html">Second Page</a></li>
+        <li><a href="form.html">Form</a></li>
+      </ul>
+    </div>
+  <div class="content">
+    <div class="main">
+      <div class="elem-border">
+        <div class="main-list">
+          <h1>Очень крутая главная страница</h1>
+          <h2> Вашему вниманию - маркированный список!</h2>
+          <ul> 
+            <li><p><a href="https://kubsu.ru/">КубГУ</a></p>  </li>
+            <li> <p><a href="http://kubsu.ru/">КубГУ,</a>  но протокол другой</p></li>
+            <li><a href="https://hidin.itch.io/"><img src="./images/fXgxao.png" alt="Игра" style="width: 300px;"></a> </li>
+            <li> <p><a href="/pagetwo.html">Страница номер два,</a>  ссылка на внутреннюю сокращенная</p></li>
+            <li><a href="/index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li> <a href="#down">Вниз страницы (ссылка на фрагмент текущей)</a> </li>
+            <li><p><a href="https://www.youtube.com/watch?v=KKVEvc7UoM0&ab_channel=hidin&start=25">Ссылка</a> с тремя параметрами url</p></li>
+            <li> <a href="https://moodle.kubsu.ru/enrol/index.php?id=801">Ссылка с параметром id в URL</a></li>
+            <li><a href="./pagetwo.html">Относительная в текущем каталоге</a></li>
+            <li><a href="./about/about.html">Относительная на страницу в каталоге about </a></li>
+            <li><a href="./about/about.html">11) относительную на страницу в каталоге уровнем выше текущего; Решение в about.html </a></li>
+            <li> <p><a href="./catalogue1/catalogue2/nestedpage.html">Страница </a> глубоко по каталогу/ Там решение 12) относительную на страницу в каталоге двумя уровнями выше; </p></li>
+            <li><p> Скачивайте мои игры по контекстной ссылке<a href="https://hidin.itch.io/masked-devourer">Вот здесь</a></li>
+            <li> <a href="https://hidin.itch.io/masked-devourer#:~:text=More%20information-,Download,-Download"> Фрагмент стороннего сайта! </a> </li>
+            <li>
+              <img src="images/ghHt23.png" alt="Игры" usemap="#gamesMap" width="832" height="421">
+            
+              <map name="gamesMap">
+                <area shape="rect" coords="0,0,400,421" href="https://hidin.itch.io/masked-devourer" alt="masked-devourer">
+                <area shape="circle" coords="600,210,100" href="https://hidin.itch.io/n" alt="noh">
+              </map>
+            </li>
+            <li><a href="">СУПЕР ПУСТАЯ ССЫЛКА</a></li>
+            <li><a>ссылка без href</a></li>
+            <li><a href="https://kubsu.ru/" rel="nofollow">
+              Ссылка nofollow поисковикам</a></li>
+              <li><a href="https://kubsu.ru/" rel="noindex">
+                Ссылка noindex поисковикам</a></li>
+        
+            <li><ol>
+              <li> <a href="https://hidin.itch.io/masked-devourer" title="Новая игра"> MASKED DEVOURER</a></li>
+              <li> <a href="https://hidin.itch.io/n" title="Старая игра"> Noh</a></li>
+            </ol> </li>
+            <li><a href="ftp://demo:password@test.rebex.net/readme.txt">FTP server</a></li>
+            <li><a href="./form.html">ФОРМА</a></li>
+          </div>
+      </div>
+      <div class="elem-border">
+        <h2>Table</h2>					
+					<table class="bordered">
+						<thead>
+							<tr>
+								<th>Purcus</th>
+								<th>Hantis</th>
+								<th>Mastron</th>
+								<th>Jevicon</th>
+								<th>Language</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="tr-nech">
+								<td>Gitsome</td>
+								<td>Some one</td>
+								<td>Take mose</td>
+								<td>Likbes</td>
+								<td>Racounter</td>
+							</tr>
+							<tr id="tr-chet">
+								<td>Linkage</td>
+								<td>Fordor</td>
+								<td>Miad ron me</td>
+								<td>Diablo core</td>
+								<td>Tidbade</td>
+							</tr>
+							<tr id="tr-nech">
+								<td>Hicura</td>
+								<td>Warecom</td>
+								<td>Xamicon</td>
+								<td>Yamama</td>
+								<td>Udoricano</td>
+							</tr>
+							<tr id="tr-chet">
+								<td>Lavistaro</td>
+								<td>Micanorta</td>
+								<td>Ebloconte ma</td>
+								<td>Quad ri port</td>
+								<td>Timesquer</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+      </div>
+      <div class="elem-border">
+      <div class="main-form">
+        <form action="/"
+        method="POST">
+  
+        <label>
+          ФИО:<br />
+          <input name="field-name"
+            type="text"
+            placeholder="Фамилия, Имя, Отчество" />
+        </label><br />
+  
+        <label>
+          Ваш email:<br />
+          <input name="field-email"
+            type="email"
+            placeholder="Введите вашу почту" />
+        </label><br />
+  
+        <label>
+          Дата рождения:<br />
+          <input name="field-date"
+            placeholder="2019-08-13"
+            type="date" />
+        </label><br />
+        
+        Пол:<br />
+        <label><input type="radio"
+          name="radio-group-male" value="male" />
+          Мужской</label>
+        <label><input type="radio"
+          name="radio-group-female" value="female" />
+          Женский </label><br />
+  
+          <label>
+              Выберите любимый язык программирования:
+              <br />
+              <select name="field-multiple-language"
+                multiple="multiple">
+                <option value="Значение1">C</option>
+                <option value="Значение2">C++</option>
+                <option value="Значение3">JavaScript</option>
+                <option value="Значение4"> PHP</option>
+                <option value="Значение5">Python </option>
+                <option value="Значение6"> Java</option>
+                <option value="Значение7">Haskel </option>
+                <option value="Значение8">Clojure</option>
+                <option value="Значение9">Prolog </option>
+                <option value="Значение10">Scala</option>
+              </select>
+            </label><br />
+        <label>
+  
+          Расскажите о себе!<br />
+          <textarea name="field-biography">Меня зовут Кира Йошикаге...</textarea>
+        </label><br />
+  
+  
+        <label><input type="checkbox" name="check-contract" />
+          С контрактом ознакомлен(а)</label><br />
+  
+        <input type="submit" value="Сохранить" />
+      </form>
+        </div>
+      </div>
+      <div class="elem-border">
+        <h2>СКАЧИВАЙТЕ МОЮ ИГРУ ОНА ОЧЕНЬ СТРАШНАЯ</h2>
+        <p> Это серьёзно я делал <a href="https://hidin.itch.io/masked-devourer">Вот здесь</a>
+          <br>
+          Игра выиграла много наград, такие как:
+          <ol>
+            <li><b>ОЧЕНЬ СТРАШНАЯ ИГРА 2023</b></li>
+            <li><b>СТРАШИЛКА ВЕКА </b></li>
+            <li><b>Вот твоя игра была страшнее чем хоррор квест этот про монашек</b> - <a href="https://flokxxy.github.io">В. Аванесова </a></li>
+            <li><em>А деньги будут за игру? </em> - Мама</li>
+          </ol>
+        <br>
+        <a href="https://hidin.itch.io/masked-devourer#:~:text=More%20information-,Download,-Download"> СКАЧАТЬ ОНЛАЙН БЕЗ СМС И РЕГИСТРАЦИИ БЕЗ ВИРУСОВ </a>
+        </p>
+      </div>
+
+
+
+    </div> <!--main-->
+
+
+
+
+  </div> <!--content-->
+  </div>
+
+
+
    
   
     
-       
-    <h2>СКАЧИВАЙТЕ МОЮ ИГРУ ОНА ОЧЕНЬ СТРАШНАЯ</h2>
-    <p> Это серьёзно я делал <a href="https://hidin.itch.io/masked-devourer">Вот здесь</a>
-      <br>
-      Игра выиграла много наград, такие как:
-      <ol>
-        <li><b>ОЧЕНЬ СТРАШНАЯ ИГРА 2023</b></li>
-        <li><b>СТРАШИЛКА ВЕКА </b></li>
-        <li><b>Вот твоя игра была страшнее чем хоррор квест этот про монашек</b> - <a href="https://flokxxy.github.io">В. Аванесова </a></li>
-        <li><em>А деньги будут за игру? </em> - Мама</li>
-      </ol>
-    <br>
-    <a href="https://hidin.itch.io/masked-devourer#:~:text=More%20information-,Download,-Download"> СКАЧАТЬ ОНЛАЙН БЕЗ СМС И РЕГИСТРАЦИИ БЕЗ ВИРУСОВ </a>
-    </p>
-
-    <h2>Каталог моих игр</h2>
-   
-    <p><noindex>Вот именно эта часть страницы не будет индексироваться яндексом!</noindex> </p>
-    <!--rel nofollow rel noindex -->
-    
-
     
  </body>
+
+
  <footer> 
-  <p> Заполните данную форму! <a href="./form.html">ОФОРМИТЬ МИКРОЗАЙМ</a></p>
-  <h1 id = "down">вот сюда крутим</h1>
+  <div>
+    <ul class="footer-list">
+     <li><p>&copy; Базилевский Даниил</p></li>
+     <li><p><a href="#">Главная</a></p></li>
+     <li><p><a href="./form.html">Форма</a></p></li>  
+      <li><p id = "down">вот сюда крутим</p> </li>
+    </ul>
+</div>
  </footer>
 </html>
 
