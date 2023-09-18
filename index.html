@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <title>Главная</title>
   <!--[if IE]>
@@ -17,19 +19,20 @@
  <body>
   <div class="wrapper">
     <div class="header">
-      <div class="logo"><a href=""><img src="images/2FXGqM.png" alt="Logo" style="width: 40px; height: 40px;"> </a> 
-        <span class="logo-text">Name of the site</span>
+      <a href="" id="logo-image"><img src="images/2FXGqM.png" alt="Logo"> </a>
+      <div class="header-org">
+        <nav class="header-nav">
+          <a href="/about/about.html">About</a>
+          <a href="/pagetwo.html">Second Page</a>
+          <a href="form.html">Form</a>
+        </nav>
+        <span id="logo-text">Очень обычный сайт</span>
       </div>
-      <ul class="nav">
-        <li><a href="/about/about.html">About</a></li>
-        <li><a href="/pagetwo.html">Second Page</a></li>
-        <li><a href="form.html">Form</a></li>
-      </ul>
     </div>
   <div class="content">
     <div class="main">
-      <div class="elem-border">
-        <div class="main-list">
+      
+        <div class="main-list" id="elem-border">
           <h1>Очень крутая главная страница</h1>
           <h2> Вашему вниманию - маркированный список!</h2>
           <ul> 
@@ -69,11 +72,10 @@
             <li><a href="ftp://demo:password@test.rebex.net/readme.txt">FTP server</a></li>
             <li><a href="./form.html">ФОРМА</a></li>
           </div>
-      </div>
-      <div class="elem-border">
-        <h2>Table</h2>					
+          <div class="main-table" id="elem-border">
 					<table class="bordered">
-						<thead>
+            <h2>Table</h2>
+            <thead>
 							<tr>
 								<th>Purcus</th>
 								<th>Hantis</th>
@@ -113,12 +115,8 @@
 							</tr>
 						</tbody>
 					</table>
-
-
-
-      </div>
-      <div class="elem-border">
-      <div class="main-form">
+        </div>
+      <div class="main-form" id="elem-border">
         <form action="/"
         method="POST">
   
@@ -181,8 +179,7 @@
         <input type="submit" value="Сохранить" />
       </form>
         </div>
-      </div>
-      <div class="elem-border">
+      <div class="main-ad" id="elem-border">
         <h2>СКАЧИВАЙТЕ МОЮ ИГРУ ОНА ОЧЕНЬ СТРАШНАЯ</h2>
         <p> Это серьёзно я делал <a href="https://hidin.itch.io/masked-devourer">Вот здесь</a>
           <br>
@@ -212,21 +209,21 @@
 
    
   
-    
+  <footer> 
+    <div class="Efooter">
+      <span>&copy; Базилевский Даниил</span>
+     <a href="#">Главная</a>
+     <a href="./form.html">Форма</a>  
+     <span id = "down">вот сюда крутим</span>
+
+    </div>
+     
+ </footer> 
     
  </body>
 
 
- <footer> 
-  <div>
-    <ul class="footer-list">
-     <li><p>&copy; Базилевский Даниил</p></li>
-     <li><p><a href="#">Главная</a></p></li>
-     <li><p><a href="./form.html">Форма</a></p></li>  
-      <li><p id = "down">вот сюда крутим</p> </li>
-    </ul>
-</div>
- </footer>
+
 </html>
 
 
