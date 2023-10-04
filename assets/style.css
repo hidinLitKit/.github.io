@@ -1,4 +1,10 @@
 
+.red-link a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 .red-link a:active
 {
     color:#a12424;
