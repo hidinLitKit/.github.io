@@ -3,7 +3,8 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <title>Главная</title>
   <!--[if IE]>
@@ -12,23 +13,24 @@
   <title>Главная страница</title>
  </head>
 
- <body>
-  <div class="wrapper">
-    <div class="header">
-      <a href="" id="logo-image"><img src="images/2FXGqM.png" alt="Logo"> </a>
-      <div class="header-org">
-        <nav class="header-nav">
-          <a href="/about/about.html">About</a>
-          <a href="/pagetwo.html">Second Page</a>
-          <a href="form.html">Form</a>
-        </nav>
-        <span id="logo-text">Cool website</span>
+ <body class="p-0 m-0 red-link fw-normal ">
+  <div class="container-fluid">
+    <header class="row p-4">
+      <div class="col-md-5 col-lg-4 row justify-content-around">
+        <div class="col-4 col-sm-6"><a href=""><img class="img-fluid" src="images/2FXGqM.png" alt="Logo"> </a></div>
+        <div class="col-3 col-sm-6 px-sm-3 px-2 mobile-text-aligner mt-3 h1">Website</div>
       </div>
-    </div>
-  <div class="content">
-    <div class="main">
-      
-        <div class="main-list" id="elem-border">
+      <div class="col-md-7 col-lg-8 row d-flex mx-sm-m3">
+        <div class="row d-flex mx-sm-2 mt-2 justify-content-end ">
+          <a class="col-md-3 h4 px-2 mobile-text-aligner header-nav p-3 " href="/about/about.html">About</a>
+          <a class="col-md-3 h4 px-2 mobile-text-aligner header-nav p-3" href="/pagetwo.html">Second Page</a>
+          <a class="col-md-3 h4 px-2 mobile-text-aligner header-nav p-3" href="form.html">Form</a>
+        </div>
+        
+      </div>
+    </header>
+  <div class="container-fluid flex flex-column d-flex ">
+        <div class="order-2 order-md-1 m-3 justify-content-center" id="elem-border">
           <h1>Очень крутая главная страница</h1>
           <h2> Вашему вниманию - маркированный список!</h2>
           <ul> 
@@ -68,8 +70,8 @@
             <li><a href="ftp://demo:password@test.rebex.net/readme.txt">FTP server</a></li>
             <li><a href="./form.html">ФОРМА</a></li>
           </div>
-          <div class="main-table" id="elem-border">
-					<table class="bordered">
+          <div class="order-1 order-md-2 m-3 justify-content-center" id="elem-border">
+					<table class="table">
             <h2>Table</h2>
             <thead>
 							<tr>
@@ -112,7 +114,7 @@
 						</tbody>
 					</table>
         </div>
-      <div class="main-form" id="elem-border">
+      <div class="order-3 m-3 justify-content-center" id="elem-border">
         <form action="/"
         method="POST">
   
@@ -175,7 +177,7 @@
         <input type="submit" value="Сохранить" />
       </form>
         </div>
-      <div class="main-ad" id="elem-border">
+      <div class="order-4 m-3 justify-content-center" id="elem-border">
         <h2>СКАЧИВАЙТЕ МОЮ ИГРУ ОНА ОЧЕНЬ СТРАШНАЯ</h2>
         <p> Это серьёзно я делал <a href="https://hidin.itch.io/masked-devourer">Вот здесь</a>
           <br>
@@ -191,13 +193,6 @@
         </p>
       </div>
 
-
-
-    </div> <!--main-->
-
-
-
-
   </div> <!--content-->
   </div>
 
@@ -205,12 +200,12 @@
 
    
   
-  <footer> 
-    <div class="Efooter">
-      <span>&copy; Базилевский Даниил</span>
-     <a href="#">Главная</a>
-     <a href="./form.html">Форма</a>  
-     <span id = "down">вот сюда крутим</span>
+  <footer class="row p-4"> 
+    
+      <div class="col-3">&copy; Базилевский Даниил</div>
+     <a class="col-3" href="#">Главная</a>
+     <a class="col-3" href="./form.html">Форма</a>  
+     <div class="col-3" id = "down">вот сюда крутим</div>
 
     </div>
      
