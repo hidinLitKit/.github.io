@@ -3,9 +3,8 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/style23.css">
   <title>Главная</title>
   <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,33 +12,31 @@
   <title>Главная страница</title>
  </head>
 
- <body class="p-0 m-0 red-link fw-normal ">
-  <div class="container-fluid">
-    <header class="row p-4">
-      <div class="col-md-5 col-lg-4 row justify-content-around">
-        <div class="col-4 col-sm-6"><a href=""><img class="img-fluid" src="images/2FXGqM.png" alt="Logo"> </a></div>
-        <div class="col-3 col-sm-6 px-sm-3 px-2 mobile-text-aligner mt-3 h1">Website</div>
+ <body>
+  <div class="wrapper">
+    <div class="header">
+      <a href="" id="logo-image"><img src="images/2FXGqM.png" alt="Logo"> </a>
+      <div class="header-org">
+        <nav class="header-nav">
+          <a href="/about/about.html">About</a>
+          <a href="/pagetwo.html">Second Page</a>
+          <a href="form.html">Form</a>
+        </nav>
+        <span id="logo-text">Cool website</span>
       </div>
-      <div class="col-md-7 col-lg-8 row d-flex mx-sm-m3">
-        <div class="row d-flex mx-sm-2 mt-2 justify-content-end ">
-          <a class="col-md-3 h4 px-2 mobile-text-aligner header-nav p-3 " href="/about/about.html">About</a>
-          <a class="col-md-3 h4 px-2 mobile-text-aligner header-nav p-3" href="/pagetwo.html">Second Page</a>
-          <a class="col-md-3 h4 px-2 mobile-text-aligner header-nav p-3" href="form.html">Form</a>
-        </div>
-        
-      </div>
-    </header>
-  <div class="container-fluid flex flex-column d-flex ">
-        <div class="order-2 order-md-1 m-3 justify-content-center" id="elem-border">
+    </div>
+  <div class="content">
+    <div class="main">
+      
+        <div class="main-list" id="elem-border">
           <h1>Очень крутая главная страница</h1>
-          <p>Задания 2-3 по <a href="task23/task23.html">ссылке</a>. Остальные задания на этой страничке!</p>
           <h2> Вашему вниманию - маркированный список!</h2>
           <ul> 
             <li><p><a href="https://kubsu.ru/">КубГУ</a></p>  </li>
             <li> <p><a href="http://kubsu.ru/">КубГУ,</a>  но протокол другой</p></li>
             <li><a href="https://hidin.itch.io/"><img src="./images/fXgxao.png" alt="Игра" style="width: 300px;"></a> </li>
-            <li> <p><a href="/pagetwo.html">Страница номер два,</a>  ссылка на внутреннюю сокращенная</p></li>
-            <li><a href="/index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li> <p><a href="./pagetwo.html">Страница номер два,</a>  ссылка на внутреннюю сокращенная</p></li>
+            <li><a href="./task23.html">Сокращенная ссылка на главную страницу</a></li>
             <li> <a href="#down">Вниз страницы (ссылка на фрагмент текущей)</a> </li>
             <li><p><a href="https://www.youtube.com/watch?v=KKVEvc7UoM0&ab_channel=hidin&start=25">Ссылка</a> с тремя параметрами url</p></li>
             <li> <a href="https://moodle.kubsu.ru/enrol/index.php?id=801">Ссылка с параметром id в URL</a></li>
@@ -71,8 +68,8 @@
             <li><a href="ftp://demo:password@test.rebex.net/readme.txt">FTP server</a></li>
             <li><a href="./form.html">ФОРМА</a></li>
           </div>
-          <div class="order-1 order-md-2 m-3 justify-content-center" id="elem-border">
-					<table class="table">
+          <div class="main-table" id="elem-border">
+					<table class="bordered">
             <h2>Table</h2>
             <thead>
 							<tr>
@@ -115,7 +112,7 @@
 						</tbody>
 					</table>
         </div>
-      <div class="order-3 m-3 justify-content-center" id="elem-border">
+      <div class="main-form" id="elem-border">
         <form action="/"
         method="POST">
   
@@ -178,7 +175,7 @@
         <input type="submit" value="Сохранить" />
       </form>
         </div>
-      <div class="order-4 m-3 justify-content-center" id="elem-border">
+      <div class="main-ad" id="elem-border">
         <h2>СКАЧИВАЙТЕ МОЮ ИГРУ ОНА ОЧЕНЬ СТРАШНАЯ</h2>
         <p> Это серьёзно я делал <a href="https://hidin.itch.io/masked-devourer">Вот здесь</a>
           <br>
@@ -193,87 +190,13 @@
         <a href="https://hidin.itch.io/masked-devourer#:~:text=More%20information-,Download,-Download"> СКАЧАТЬ ОНЛАЙН БЕЗ СМС И РЕГИСТРАЦИИ БЕЗ ВИРУСОВ </a>
         </p>
       </div>
-      <div class="order-5 m-3 justify-content-center" id="elem-border">
-        
-        <form action="/">
-          <h1>Калькулятор стоимости заказа</h1>
 
-          <label for="item">Псевдонастоящий обмен валют</label>
-          <select id="item">
-            <option value="1000">1 доллар</option>
-            <option value="5000">5 долларов</option>
-            <option value="10000">10 долларов</option>
-          </select>
-          <br>
-          <br>
-          <label for="ammount">Количество товара</label>
-          <input type="number"required id="ammount" min="1">
-          <br>
-          <br>
-          <button type="button" id="calc-button">Подсчёт</button>
-        </form>
-        <div id="result"></div>
-        
 
-      </div>
 
-      <div class="order-5 m-3 justify-content-center" id="elem-border">
-        
-        <form action="/">
-          <h1>Калькулятор часть 2</h1>
-          <h2 class="text-center">Вкусный комплексный обед!</h2>
+    </div> <!--main-->
 
-        <div class="container-fluid row" id="mainSelect">
-           <div class="col-4">
-            
-            <input type="radio" name="radio-type" value="0" id="first-opt">
-            <label for="first-opt">Рамён с курицей</label>
 
-          </div> 
-           <div class="col-4">
-            
-            <input type="radio" name="radio-type" value="1" id="second-opt">
-            <label for="second-opt">Чай</label>
 
-          </div> 
-           <div class="col-4">
-            
-            
-            <input type="radio" name="radio-type" value="2" id="third-opt">
-            <label for="third-opt">Закуски</label>
-
-          </div>   
-        </div>
-
-        <div id="fieldSelect">
-          <label for="selectOptions"><h4>Выберите чай!</h4></label>
-          <br>
-          <select name="select" id="selectOptions" multiple>
-            <option value="selectOption1">Зелёный чай</option>
-            <option value="selectOption2">Чёрный чай</option>
-            <option value="selectOption3">Фруктовый чай</option>
-          </select>
-        </div>
-        <div id="checkboxedSelect">
-          <h4>Выберите Закуску</h4>
-          <div>
-            <input type="checkbox" id="chbOp1" name="checkBoxtype" value="checkboxOption1">
-            <label for="chbOp1">Морковка по-корейски</label>
-            <input type="checkbox" id="chbOp2" name="checkBoxtype" value="checkboxOption2">
-            <label for="chbOp2">Кимчи острый традиционный</label>
-          </div>
-        </div>
-
-          <br>
-          <br>
-          <label for="ammount2">Количество товара</label>
-          <input type="number" required id="ammount2" name="ammount2" min="1">
-          <p id="calc2-answer"></p>
-        </form>
-        
-        
-
-      </div>
 
   </div> <!--content-->
   </div>
@@ -282,23 +205,19 @@
 
    
   
-  <footer class="row p-4"> 
-    
-      <div class="col-3">&copy; Базилевский Даниил</div>
-     <a class="col-3" href="#">Главная</a>
-     <a class="col-3" href="./form.html">Форма</a>  
-     <div class="col-3" id = "down">вот сюда крутим</div>
+  <footer> 
+    <div class="Efooter">
+      <span>&copy; Базилевский Даниил</span>
+     <a href="#">Главная</a>
+     <a href="./form.html">Форма</a>  
+     <span id = "down">вот сюда крутим</span>
 
     </div>
      
  </footer> 
-    <script src="assets/scriptCount.js"></script>
-    <script src="assets/scriptCalc2.js"></script>
+    
  </body>
 
 
 
 </html>
-
-
-
