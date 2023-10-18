@@ -216,6 +216,64 @@
 
       </div>
 
+      <div class="order-5 m-3 justify-content-center" id="elem-border">
+        
+        <form action="/">
+          <h1>Калькулятор часть 2</h1>
+          <h2 class="text-center">Вкусный комплексный обед!</h2>
+
+        <div class="container-fluid row" id="mainSelect">
+           <div class="col-4">
+            
+            <input type="radio" name="radio-type" value="0" id="first-opt">
+            <label for="first-opt">Рамён с курицей</label>
+
+          </div> 
+           <div class="col-4">
+            
+            <input type="radio" name="radio-type" value="1" id="second-opt">
+            <label for="second-opt">Чай</label>
+
+          </div> 
+           <div class="col-4">
+            
+            
+            <input type="radio" name="radio-type" value="2" id="third-opt">
+            <label for="third-opt">Закуски</label>
+
+          </div>   
+        </div>
+
+        <div id="fieldSelect">
+          <label for="selectOptions"><h4>Выберите чай!</h4></label>
+          <br>
+          <select name="select" id="selectOptions" multiple>
+            <option value="selectOption1">Зелёный чай</option>
+            <option value="selectOption2">Чёрный чай</option>
+            <option value="selectOption3">Фруктовый чай</option>
+          </select>
+        </div>
+        <div id="checkboxedSelect">
+          <h4>Выберите Закуску</h4>
+          <div>
+            <input type="checkbox" id="chbOp1" name="checkBoxtype" value="checkboxOption1">
+            <label for="chbOp1">Морковка по-корейски</label>
+            <input type="checkbox" id="chbOp2" name="checkBoxtype" value="checkboxOption2">
+            <label for="chbOp2">Кимчи острый традиционный</label>
+          </div>
+        </div>
+
+          <br>
+          <br>
+          <label for="ammount2">Количество товара</label>
+          <input type="number" required id="ammount2" name="ammount2" min="1">
+          <p id="calc2-answer"></p>
+        </form>
+        
+        
+
+      </div>
+
   </div> <!--content-->
   </div>
 
@@ -234,6 +292,7 @@
      
  </footer> 
     <script src="assets/scriptCount.js"></script>
+    <script src="assets/scriptCalc2.js"></script>
  </body>
 
 
