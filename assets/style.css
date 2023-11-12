@@ -42,7 +42,7 @@ header{
     color: #a12424;
 }
 
-#elem-border{
+.elem-border{
     
     border: 2px solid #a12424;
     background-color: #f3cece;
@@ -54,7 +54,7 @@ footer{
     background-color: #ffa1a1 ;
 }
 
-#tr-nech td{
+.tr-nech td{
     background-color: black;
     color: white;
 }

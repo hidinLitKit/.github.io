@@ -79,7 +79,7 @@ body{
 .main-ad{
     order:4
 }
-#elem-border{
+.elem-border{
     margin: 10px 0 10px;
     border: 2px solid #a12424;
     background-color: #f3cece;
@@ -151,10 +151,10 @@ table.bordered tbody tr:hover {
 .Efooter a:hover{
     color: #a12424;
 }
-#tr-nech{
+.tr-nech{
     background-color: black;
 }
-#tr-nech td{
+.tr-nech td{
     color: white;
 }
 
