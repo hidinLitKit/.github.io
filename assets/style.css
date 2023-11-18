@@ -23,6 +23,12 @@ header{
     background-color:#ffa1a1 ;
 }
 
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+    transform: scale(0.75);
+    transition: transform .3s;
+}
 
 .header-nav{
     font-size: 18px;
@@ -150,12 +156,18 @@ footer{
 }
 .form-popup
 {
-	position: fixed;
-	height: 100vh;
-	width: 100%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity .4s, visibility .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+    
 }
 
 @media screen and (min-width: 758px) {

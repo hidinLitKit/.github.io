@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', function(event)
     
     document.getElementById("form-open").addEventListener("click",function(){
         document.getElementById("form-popup").classList.add("open");
-        history.pushState(null, null, "form");
+        history.pushState(null, null, "taks-8form");
         recoverInfo();
     })
 });
